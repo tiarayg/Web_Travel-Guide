@@ -1,98 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Guide</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travelguud Landing Page</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="jumbotron">
-            <h1>Travel Guide</h1>
-            <p>Siap Menemanimu Keliling Indonesia</p>
+  <nav class="navbar">
+    <div class="logo"><b>Travel<span>Guud</span></b></div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#packages">Packages</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-icons">
+      <span class="search">&#128269;</span>
+      <span class="menu">&#9776;</span>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-left">
+      <h1>
+        <span class="underline">Mari</span> Ciptakan<br>
+        Petualangan<br>
+        Tak Terlupakan!
+      </h1>
+      <p>Jelajahi Indonesia dan temukan keindahan di setiap langkah.Kami hadir untuk membantumu merancang liburan impian yang penuh cerita dan makna.</p>
+      <div class="search-bar">
+        <div class="search-item">
+          <label>Lokasi <span>&#9662;</span></label>
+          <div class="search-value">Bali</div>
         </div>
-        
-        <nav>
-            <ul id="nav-menu">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/Destination/">Destinations</a></li>
-                <li><a href="/Contact/">Contact</a></li>
-            </ul>
-        </nav> 
-    
-    </header>
+        <div class="search-item">
+          <label>Hari/tanggal <span>&#9662;</span></label>
+          <div class="search-value">26 Maret, Jumat</div>
+        </div>
+        <div class="search-item">
+          <label>Harga <span>&#9662;</span></label>
+          <div class="search-value">Rp. 87,000</div>
+        </div>
+        <button class="search-btn"><span>&#128269;</span></button>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="img-grid">
+        <img src="assets/bali.jpg" class="img1" alt="">
+        <img src="assets/bromo.jpg" class="img2" alt="">
+        <img src="assets/bunaken.jpg" class="img3" alt="">
+      </div>
+      <svg class="plane-svg" width="120" height="80">
+        <path d="M100,70 Q80,10 40,30" stroke="#222" stroke-dasharray="5,5" fill="none"/>
+        <text x="100" y="70" font-size="24">&#9992;</text>
+      </svg>
+    </div>
+  </section>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Sidebar -->
-        <aside>
-            <div style="text-align: center; margin-top: 20px;">
-                <img src="assets/Profilguide.jpeg" alt="Travel Guide" style="width: 100%; border-radius: 5px;">
-                <h3 style="margin-top: 15px;">✨Telah berpengalaman lebih dari 200+ pulau di Indonesia✨</h3>
-                <div style="text-align: left; margin-top: 10px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; display: inline-block;">
-                  <p><strong>Nama:</strong> Tiara Tour Service</p>
-                  <p><strong>No Telpon:</strong> +6281250120550</p>
-                  <p><strong>Alamat:</strong> Semarang, Jawa Tengah</p>
-                </div>
+  <!-- SECTION ABOUT US -->
+  <section class="aboutus" id="about">
+    <div class="aboutus-left">
+      <div class="aboutus-label">Kenapa harus memilih kita?</div>
+      <h2>
+        Panduan Lokal Profesional<br>
+        & Memiliki Harga Terjangkau  Transparan
+      </h2>
+      <p>
+        Kami adalah platform travel guide yang hadir untuk membantumu merancang perjalanan impian dengan mudah, nyaman, dan penuh inspirasi.
+        Berawal dari kecintaan kami terhadap dunia perjalanan, kami percaya bahwa setiap orang berhak menikmati liburan yang menyenangkan dan bermakna — tanpa ribet.
+
+        Di TravelGuud, kami menggabungkan teknologi, informasi akurat, dan layanan personal agar kamu bisa menjelajahi Indonesia dengan tenang dan percaya diri.
+        Mari jelajahi keajaiban dunia bersama kami. Karena setiap langkah, adalah awal dari cerita baru.
+
+
+      </p>
+      <button class="aboutus-btn">About Us</button>
+      <div class="aboutus-stats">
+        <div>
+          <div class="aboutus-stat-num">14</div>
+          <div class="aboutus-stat-label">Years<br>Experience</div>
+        </div>
+        <div>
+          <div class="aboutus-stat-num">320+</div>
+          <div class="aboutus-stat-label">Distention<br>Collaboration</div>
+        </div>
+        <div>
+          <div class="aboutus-stat-num">67+</div>
+          <div class="aboutus-stat-label">Satisfied<br>Customer</div>
+        </div>
+      </div>
+    </div>
+    <div class="aboutus-right">
+      <div class="aboutus-img-frame">
+        <img src="assets/bali.jpg" alt="Sailing" />
+        <div class="aboutus-feedback">
+          <div>Bagaimana Pengalamanmu?</div>
+          <div class="aboutus-emojis">
+            <span>😡</span>
+            <span>😕</span>
+            <span>🙂</span>
+            <span>😘</span>
+            <span>😍</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="packages" id="packages">
+    <div class="packages-header">
+      <div class="packages-label">Top Destinasi!</div>
+      <h2>
+        Destinasi yang  <span class="highlight">Populer</span>
+      </h2>
+    </div>
+    <div class="packages-carousel">
+      <button class="carousel-btn prev">&#8592;</button>
+      <div class="packages-list">
+        <div class="package-card">
+          <div class="package-img">
+            <img src="assets/komodoislandjpg.jpg" alt="Pulau Komodo">
+            <div class="package-rating">
+              <span class="star">★</span> 4.0 (23) <span>😊</span>
             </div>
-            <h2>Top Destinations</h2>
-            <ul>
-                <li>Bali</li>
-                <li>Yogyakarta</li>
-                <li>Lombok</li>
-                <li>Jakarta</li>
-            </ul>
-        </aside>
-
-        <!-- Articles -->
-        <article>
-            <!-- Article 1 -->
-            <div class="card">
-                <h3>Tour Bersama Saya</h3>
-                <p>Hi, Nikmati pengalaman perjalanan yang personal dan eksklusif bersama saya! 
-                    Saya siap mengajak Anda mengeksplor keindahan Indonesia, mulai dari pulau-pulau eksotis hingga tempat-tempat tersembunyi yang memukau. 
-                    Dengan pengetahuan lokal dan perhatian pada setiap detail perjalanan, saya akan memastikan setiap momen Anda menjadi tak terlupakan. 
-                    Hubungi saya untuk memulai petualangan Anda!</p>
+          </div>
+          <div class="package-info">
+            <div class="package-title">Pulau Komodo</div>
+            <div class="package-price">Rs. 45,000/- <span>Per orang</span></div>
+            <div class="package-meta">
+              <span>🕒 4 hari</span>
+              <span>👥 10+</span>
+              <span>📍 NTB, Indonesia</span>
             </div>
-
-            <!-- Article 2 -->
-            <div class="card">
-                <h3>Jelajahi Indonesia</h3>
-                <div class="carousel-container">
-                    <div class="carousel">
-                        <div class="carousel-item">
-                            <img src="assets/bunaken.jpg" alt="Taman Bunaken">
-                            <p class="carousel-caption">Taman Bunaken - Jelajahi keindahan bawah laut Indonesia</p>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="assets/gunungrinjani.jpg" alt="Gunung Rinjani">
-                            <p class="carousel-caption">Gunung Rinjani - Keindahan Gunung Rinjani</p>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="assets/prambanan.jpg" alt="Candi Prambanan">
-                            <p class="carousel-caption">Candi Prambanan - Candi dengan umur ratusan tahun</p>
-                        </div>
-                    </div>
-                    <button class="prev" onclick="prevSlide()">&#10094;</button>
-                    <button class="next" onclick="nextSlide()">&#10095;</button>
-                </div>
-                <p>Indonesia adalah negeri dengan sejuta keajaiban. 
-                    Bersama saya, mari jelajahi gunung yang menantang, pantai yang memikat, hingga budaya yang memukau. 
-                    Baik Anda seorang petualang sejati atau pecinta ketenangan, saya akan membantu merancang perjalanan sesuai keinginan Anda. 
-                    Biarkan saya menjadi pemandu setia Anda dalam mengeksplor pesona Indonesia. 
-                    Hubungi sekarang dan mulai perjalanan Anda!!</p>
+          </div>
+        </div>
+        <div class="package-card">
+          <div class="package-img">
+            <img src="assets/bunaken.jpg" alt="Bunaken">
+            <div class="package-rating">
+              <span class="star">★</span> 4.5 (32) <span>😊</span>
             </div>
-        </article>
-    </main>
+          </div>
+          <div class="package-info">
+            <div class="package-title">Bunaken</div>
+            <div class="package-price">Rs. 23,000/- <span>Per orang</span></div>
+            <div class="package-meta">
+              <span>🕒 6 hari</span>
+              <span>👥 13+</span>
+              <span>📍 Sulawesi, Indonesia</span>
+            </div>
+          </div>
+        </div>
+        <div class="package-card">
+          <div class="package-img">
+            <img src="assets/prambanan.jpg" alt="Candi Perambanan">
+            <div class="package-rating">
+              <span class="star">★</span> 4.7 (42) <span>😍</span>
+            </div>
+          </div>
+          <div class="package-info">
+            <div class="package-title">Candi Perambanan</div>
+            <div class="package-price">Rs. 19,000/- <span>Per orang</span></div>
+            <div class="package-meta">
+              <span>🕒 4 hari</span>
+              <span>👥 10+</span>
+              <span>📍 Yogyakarta, Indonesia</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-btn next">&#8594;</button>
+    </div>
+    <div class="carousel-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Travel Guide. All Rights Reserved.</p>
-    </footer>
+  <!-- SECTION CONTACT -->
+  <section class="contact-subscribe" id="contact">
+  <div class="subscribe-plane left">
+    <svg width="120" height="120">
+      <path d="M100,20 Q40,60 60,110" stroke="#444" stroke-dasharray="5,5" fill="none" stroke-width="2"/>
+      <text x="10" y="30" font-size="32">&#9992;</text>
+    </svg>
+  </div>
+  <div class="subscribe-content">
+    <h2>Selalu Stay<br>untuk berita terbaru dari kami</h2>
+    <p>Punya pertanyaan, butuh bantuan merencanakan perjalanan, atau ingin konsultasi langsung? Tim kami siap membantumu!</p>
+    <form class="subscribe-form">
+      <input type="email" placeholder="Masukkan Email" required>
+      <button type="kirim">Kirim</button>
+    </form>
+  </div>
+  <div class="subscribe-plane right">
+    <svg width="120" height="120">
+      <path d="M20,20 Q80,60 60,110" stroke="#444" stroke-dasharray="5,5" fill="none" stroke-width="2"/>
+      <text x="90" y="30" font-size="32">&#9992;</text>
+    </svg>
+  </div>
+</section>
 
-    <!-- JavaScript -->
-    <script src="js/script.js"></script>
+<!-- FOOTER -->
+  <footer class="main-footer">
+  <div class="footer-container">
+    <div class="footer-col footer-brand">
+      <div class="footer-title">Travel</div>
+      <p>Cek media sosial kami, untuk berita terbaru dan dapatkan promo yang menarik setiap bulan</p>
+      <div class="footer-social">
+        <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn"></a>
+        <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" alt="Twitter"></a>
+      </div>
+    </div>
+    <div class="footer-col footer-services">
+      <div class="footer-title">Services</div>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Destinasi</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col footer-contact">
+      <div class="footer-title">Contact</div>
+      <ul>
+        <li><span class="footer-icon">📍</span> Indonesia</li>
+        <li><span class="footer-icon">📞</span> +62908789098</li>
+        <li><span class="footer-icon">✉️</span> travelguud@gmail.com</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    travelguud©2024 all right reserve
+  </div>
+</footer>
+  <script src="script.js"></script>
 </body>
 </html>
